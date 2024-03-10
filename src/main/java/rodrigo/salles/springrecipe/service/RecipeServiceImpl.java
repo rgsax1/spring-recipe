@@ -1,6 +1,5 @@
 package rodrigo.salles.springrecipe.service;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
@@ -63,6 +62,7 @@ public class RecipeServiceImpl implements RecipeService {
         return recipeRepo.save(recipe);
     }
 
+    @SuppressWarnings("null")
     @Override
     public Recipe updateRecipe(Recipe recipe, Long Id) throws Exception {
         Recipe oldRecipe = findRecipeByid(Id);

@@ -36,6 +36,8 @@ public class UserController {
         return savedUser;
     }
 
+    
+    @SuppressWarnings("null")
     @DeleteMapping("/users/{userId}")
     public String deleteUser(@PathVariable Long userId) throws Exception {
         userRepo.deleteById(userId);
