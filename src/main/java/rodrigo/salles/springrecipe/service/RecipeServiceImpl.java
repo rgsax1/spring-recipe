@@ -67,7 +67,7 @@ public class RecipeServiceImpl implements RecipeService {
     public Recipe updateRecipe(Recipe recipe, Long Id) throws Exception {
         Recipe oldRecipe = findRecipeByid(Id);
         
-        if(recipe..getTitle()!=null){
+        if(recipe.getTitle()!=null){
             oldRecipe.setTitle(recipe.getTitle());
         }
         if(recipe.getImage() !=null ){

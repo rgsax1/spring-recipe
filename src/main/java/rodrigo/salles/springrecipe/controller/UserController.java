@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
 import rodrigo.salles.springrecipe.model.User;
 import rodrigo.salles.springrecipe.repo.UserRepo;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 
 @RestController
