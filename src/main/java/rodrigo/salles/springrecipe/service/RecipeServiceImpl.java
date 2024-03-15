@@ -4,17 +4,18 @@ import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import rodrigo.salles.springrecipe.model.Recipe;
 import rodrigo.salles.springrecipe.model.User;
 import rodrigo.salles.springrecipe.repo.RecipeRepo;
 
+@Service
 public class RecipeServiceImpl implements RecipeService {
 
+    @Autowired
     private RecipeRepo recipeRepo;
-
-    public RecipeServiceImpl(RecipeRepo recipeRepo) {
-        this.recipeRepo = recipeRepo;
-    }
 
     @Override
     public Recipe createRecipe(Recipe recipe, User user) {

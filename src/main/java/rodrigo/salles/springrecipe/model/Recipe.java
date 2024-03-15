@@ -15,12 +15,12 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+@Entity
+@Table(name = "tabela_recipe")
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
-@Entity
-@Table(name="Recipe")
 public class Recipe {
     @Id
     @GeneratedValue (strategy = GenerationType.AUTO)
